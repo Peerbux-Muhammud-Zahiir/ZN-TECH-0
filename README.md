@@ -59,7 +59,7 @@ We welcome contributions from the community! To contribute:
 
 ## 👥 Contributors
 - Muhammud Zahiir Peerbux
-- Nehal Dookhea
+- Nehal Dookheea
 
 ---
 
