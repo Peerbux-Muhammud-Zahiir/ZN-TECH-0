@@ -1,5 +1,12 @@
 # 🌟 ZN TECH 🌟
 
+<div align="center">
+
+
+<img src=./1.jpg width=50%>
+    
+</div>
+
 ZN TECH is an e-commerce platform dedicated to providing trendy technologies, electronics, and accessories to the Mauritian market at unbeatable prices. Our platform offers an intuitive shopping experience, free product demo videos, and exciting promotions.
 
 ## 📄 Table of Contents
