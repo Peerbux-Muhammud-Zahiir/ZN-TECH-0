@@ -1,9 +1,9 @@
-# 🌟 ZN TECH 🌟
+# ZN TECH :iphone:
 
 <div align="center">
 
 
-<img src=./1.jpg width=50%>
+<img src=./3.jpg width=90%>
     
 </div>
 
