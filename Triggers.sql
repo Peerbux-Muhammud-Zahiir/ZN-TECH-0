@@ -1,19 +1,3 @@
---  Trigger to Update Stock on Order Product Insert
-
-DELIMITER //
-
-CREATE TRIGGER trg_update_stock_on_order_insert
-AFTER INSERT ON OrderProduct
-FOR EACH ROW
-BEGIN
-    UPDATE Product
-    SET stockQuantity = stockQuantity - NEW.quantity
-    WHERE productID = NEW.productID;
-END //
-
-DELIMITER ;
-
-
 -- Trigger to Log Product Stock Changes
 
 DELIMITER //
@@ -54,6 +38,9 @@ END //
 
 DELIMITER ;
 
+-- testing trg_prevent_delivered_order_deletion
+DELETE FROM `Order` WHERE OrderID = 7;		-- order where status is not delivered is deleted sucessfully
+DELETE FROM `Order` WHERE OrderID = 8;		-- order where status is delivered does not work
 
 -- Trigger to Automatically Set Delivery Date
 
@@ -69,3 +56,7 @@ BEGIN
 END //
 
 DELIMITER ;
+
+SELECT * FROM Delivery
+INSERT INTO Delivery (deliveryAddress, deliveryStatus, deliveryDate, orderID)
+VALUES ('reduit', 'shipped', '2024-08-20', 8);

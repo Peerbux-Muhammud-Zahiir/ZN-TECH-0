@@ -55,4 +55,12 @@ CREATE TABLE Review (
     FOREIGN KEY (productID) REFERENCES Product(productID)
 );
 	
+CREATE TABLE StockLog (
+    logID INT AUTO_INCREMENT PRIMARY KEY,
+    productID INT,
+    oldStock INT,
+    newStock INT,
+    changeDate TIMESTAMP,
+    FOREIGN KEY (productID) REFERENCES Product(productID)
+);
     

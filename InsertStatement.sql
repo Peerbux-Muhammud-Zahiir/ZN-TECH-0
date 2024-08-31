@@ -17,3 +17,8 @@ VALUES	('2024-08-15', 'pending', 1),
 		('2024-06-12', 'shipped', 2);
 
 SELECT * FROM `Order`
+
+INSERT INTO OrderProduct (quantity, orderID, productID)
+VALUES (5, 1, 1)
+
+	
